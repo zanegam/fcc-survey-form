@@ -3,8 +3,13 @@
 <body>
     <h1 id="title">Movie Survey</h1>
     <p id="description">Please take a moment to fill out a brief survey about your experience</p>
-    <form id="survey-form">
-        
+    <form id="survey-form" action="#">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Full Name"><br>
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" placeholder="xxx@xxx.com"><br>
+        <label for="rating">Rating:</label>
+        <input type="number" id="rating" name="rating" min="1" max="5" placeholder="5"><br>
     </form>
 
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
