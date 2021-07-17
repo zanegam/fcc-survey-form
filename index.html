@@ -10,8 +10,8 @@
         <input type="email" id="email" name="email" placeholder="xxx@xxx.com" required>
         <div>
             <label for="rewards">Rewards Member?</label>
-            <select name="rewards" id="dropdown">
-                <option disabled selected>Select One</option>
+            <select name="rewards" id="dropdown" required>
+                <option value="" disabled selected>Select One</option>
                 <option value="yes">Yes</option>
                 <option value="no">No</option>
             </select>
@@ -43,7 +43,5 @@
             <button type="submit" id="submit">Submit</button>
         </div>
     </form>
-
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 </html>
