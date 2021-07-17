@@ -9,6 +9,14 @@
         <label for="email" id="email-label">Email:</label>
         <input type="text" id="email" name="email" placeholder="xxx@xxx.com" type="email" required>
         <div>
+            <label for="rewards">Rewards Member?</label>
+            <select name="rewards" id="dropdown">
+                <option disabled selected>Select One</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+        </div>
+        <div>
             <label for="number" id="number-label">Rating:</label>
             <input type="number" id="number" name="number" min="1" max="5" placeholder="5" required>
         </div>  
@@ -18,14 +26,18 @@
             <label><input type="radio" id="maybe-rec" name="rec" value="Maybe">Maybe</label>
             <label><input type="radio" id="no-rec" name="rec" value="No">No</label>
         </div>
-        <div><label for="comments">Any additional comments?</label></div>
-        <div></div><textarea type="text" id="comments" name="comments"></textarea></div>
         <div>
             <label for="movies">Movie Seen</label>
             <label><input type="checkbox" name="movies" value="black-widow">Black Widow</label>
             <label><input type="checkbox" name="movies" value="space-jam">Space Jam</label>
             <label><input type="checkbox" name="movies" value="pig">Pig</label>
             <label><input type="checkbox" name="movies" value="roadrunner">Roadrunner</label>
+        </div>
+        <div>
+            <label for="comments">Any additional comments?</label>
+        </div>
+        <div>
+            <textarea type="text" id="comments" name="comments"></textarea>
         </div>
     </form>
 
