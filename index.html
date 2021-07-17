@@ -5,17 +5,24 @@
     <p id="description">Please take a moment to fill out a brief survey about your experience</p>
     <form id="survey-form" action="#">
         <label for="name" id="name-label">Name:</label>
-        <input type="text" id="name" name="name" placeholder="Full Name" required><br>
+        <input type="text" id="name" name="name" placeholder="Full Name" required>
         <label for="email" id="email-label">Email:</label>
-        <input type="text" id="email" name="email" placeholder="xxx@xxx.com" type="email" required><br>
-        <label for="number" id="number-label">Rating:</label>
-        <input type="number" id="number" name="number" min="1" max="5" placeholder="5" required><br>
-        <label for="rec">Would you recommend to a friend?</label>
+        <input type="text" id="email" name="email" placeholder="xxx@xxx.com" type="email" required>
+        <div>
+            <label for="number" id="number-label">Rating:</label>
+            <input type="number" id="number" name="number" min="1" max="5" placeholder="5" required>
+        </div>  
+        <div id="radio-div">
+            <label for="rec">Would you recommend to a friend?</label>
             <label><input type="radio" id="yes-rec" name="rec" value="Yes">Yes</label>
             <label><input type="radio" id="maybe-rec" name="rec" value="Maybe">Maybe</label>
-            <label><input type="radio" id="no-rec" name="rec" value="No">No</label><br>
-        <label for="comments">Any additional comments?</label><br>
-        <textarea type="text" id="comments" name="comments"></textarea>
+            <label><input type="radio" id="no-rec" name="rec" value="No">No</label>
+        </div>
+        <div><label for="comments">Any additional comments?</label></div>
+        <div></div><textarea type="text" id="comments" name="comments"></textarea></div>
+        <div>
+            <label for="movies">Movie Seen</label>
+        </div>
     </form>
 
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
